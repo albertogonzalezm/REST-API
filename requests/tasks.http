@@ -1,0 +1,28 @@
+### show database
+GET http://localhost:3000/api/tasks
+
+### create
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title":"Hacer un sitio web en laravel",
+    "description": "Trabajo freelance"
+}
+
+### find id and print
+GET http://localhost:3000/api/tasks/6393c137d922e9ee873717d5
+
+### find id and delete data
+DELETE http://localhost:3000/api/tasks/6393c89a24da6c234355f6d8
+
+### find done
+GET http://localhost:3000/api/tasks/done
+
+### find id and update params
+PUT http://localhost:3000/api/tasks/6393c072ff5d8ec9a1a984db
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en wordpress"
+}
